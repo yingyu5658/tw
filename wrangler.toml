@@ -1,0 +1,10 @@
+name = "twikoo-proxy"
+main = "./index.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "8642c00d673f02e6cbb248e89e91cff3"  # 在CF控制台->Workers->右侧获取
+workers_dev = true
+
+[build]
+upload.format = "modules"
+

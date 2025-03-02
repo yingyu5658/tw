@@ -1,1 +1,28 @@
-{ "dependencies": { "twikoo-vercel": "latest" } }
+{
+  "name": "twikoo-proxy",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "deploy": "wrangler deploy --minify",
+    "clean": "rimraf node_modules"
+  },
+  "dependencies": {
+    "twikoo-vercel": "^1.6.7",
+    "glob": "^10.3.10",
+    "rimraf": "^5.0.1",
+    "superagent": "^10.0.0",
+    "uuid": "^9.0.0",
+    "got": "^12.6.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.111.0"
+  },
+  "overrides": {
+    "request": "npm:got@^12.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
+
